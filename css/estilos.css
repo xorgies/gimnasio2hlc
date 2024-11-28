@@ -1,0 +1,143 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #000000; /* Todas las letras en negro */
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedores */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: #007bff; /* Fondo azul para que contraste con el texto blanco */
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.navbar .navbar-brand {
+  color: #000000 !important; /* Aseguramos que el texto de la marca sea negro */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #000000 !important; /* Aseguramos que los enlaces de navegación sean negros */
+  font-size: 1.1rem;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #f8f9fa; /* Cambio de color en hover */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Icono del menú hamburguesa blanco */
+}
+
+/* Formularios */
+form {
+  background-color: #fff; /* Fondo blanco para formularios */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Títulos de formularios */
+form h2 {
+  font-size: 1.8rem;
+  color: #000000; /* Títulos en negro */
+  margin-bottom: 20px;
+}
+
+/* Etiquetas de formularios */
+label {
+  font-weight: bold;
+  color: #000000; /* Texto de etiquetas en negro */
+  margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="date"],
+select.form-select {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Botones */
+.btn {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Espaciado entre elementos */
+.mb-3 {
+  margin-bottom: 20px;
+}
+
+/* Contenido adicional */
+legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000; /* Leyenda en negro */
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #000000; /* Etiquetas en negro */
+}
+
+/* Estilo para los textos dentro de las barras de navegación */
+.navbar-brand, .nav-link {
+  color: #000000 !important; /* Asegura que el texto en la barra de navegación sea negro */
+}
+
+/* Fondo oscuro para campos de entrada y texto claro */
+input[type="text"]:focus,
+input[type="date"]:focus,
+select.form-select:focus {
+  background-color: #f0f8ff; /* Fondo ligeramente gris claro en el foco */
+  color: #000000; /* Texto en negro */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .navbar .navbar-brand {
+      font-size: 1.3rem;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+      font-size: 1rem;
+  }
+
+  form {
+      padding: 20px;
+  }
+}
